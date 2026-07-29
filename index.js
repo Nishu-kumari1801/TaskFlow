@@ -1,7 +1,9 @@
 import express from "express";
+import dotenv from "dotenv";
 import path from 'path'
 import { MongoClient, ObjectId } from "mongodb";
 
+dotenv.config();
 const app=express();
 const publicPath = path.resolve('public');
 app.use(express.static(publicPath))
@@ -9,7 +11,7 @@ app.set("view engine",'ejs');
 
 const dbName="TaskFlow";
 const collectionName = "todo"
-const url = "mongodb://localhost:27017"
+const url = process.env.MONGO_URI;
 const client = new MongoClient(url);
 
 const connection =async ()=>{
