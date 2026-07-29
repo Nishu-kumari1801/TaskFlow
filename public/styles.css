@@ -126,7 +126,24 @@ textarea.input {
     display: inline-block;
 }
 
-.delete-item :hover{
+.delete-item:hover{
     background-color: red;
+    
+}
+
+.update-item  {
+    margin-top: 10px;
+    padding: 6px 10px;
+    background-color: #4dff4d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.update-item:hover{
+    background-color: green;
     
 }
