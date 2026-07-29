@@ -1,6 +1,6 @@
 import express from "express";
 import path from 'path'
-import { MongoClient } from "mongodb";
+import { MongoClient, ObjectId } from "mongodb";
 
 const app=express();
 const publicPath = path.resolve('public');
@@ -49,6 +49,17 @@ app.post("/add",async (req,res)=>{
 
 app.post("/update",(req,res)=>{
     res.redirect("/");
+})
+
+app.get("/delete/:id",async (req,res)=>{
+    const db=await connection();
+    const collection = db.collection(collectionName);
+    const result = collection.deleteOne({_id:new ObjectId(req.params.id)});
+    if(result){
+        res.redirect("/");
+    }else{
+        res.send("some error occured");
+    }
 })
 
 app.listen(3200);
