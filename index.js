@@ -90,4 +90,25 @@ app.post("/update/:id",async (req,res)=>{
     // res.send('ok');
 })
 
+app.post("/multi-delete",async (req,res)=>{
+    const db=await connection();
+    const collection = db.collection(collectionName);
+    console.log(req.body.selectedTask)
+    
+    let selectedTask = undefined;
+    if(Array.isArray(req.body.selectedTask)){
+    selectedTask = req.body.selectedTask.map((id)=>new ObjectId(id))
+    }else{
+    selectedTask = [new ObjectId(req.body.selectedTask)];
+    }
+    console.log(selectedTask);
+    const result = await collection.deleteMany({_id:{$in:selectedTask}})
+    if(result){
+        res.redirect("/");
+    }else{
+        res.send("some error occured");
+    }
+    // res.send('ok');
+})
+
 app.listen(3200);
