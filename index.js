@@ -3,6 +3,8 @@ import dotenv from "dotenv";
 import path from 'path'
 import { MongoClient, ObjectId } from "mongodb";
 
+const PORT = process.env.PORT || 3200;
+
 dotenv.config();
 const app=express();
 const publicPath = path.resolve('public');
@@ -113,4 +115,4 @@ app.post("/multi-delete",async (req,res)=>{
     // res.send('ok');
 })
 
-app.listen(3200);
+app.listen(PORT);
