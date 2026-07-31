@@ -22,7 +22,7 @@ The application supports complete CRUD functionality, allowing users to create n
 This project demonstrates practical implementation of backend development concepts such as routing, server-side rendering, MongoDB integration, form handling, environment variables, and RESTful CRUD operations.
 
 ✨ Features
-➕ Add New Tasks
+➕ Add New Task
 ✏️ Update Existing Tasks
 ❌ Delete Individual Tasks
 🗑️ Delete Multiple Tasks at Once
@@ -31,4 +31,20 @@ This project demonstrates practical implementation of backend development concep
 ⚡ Server-side Rendering with EJS
 🎯 Clean & User-Friendly Interface
 
-
+📂 Project Structure
+TaskFlow/
+│
+├── public/
+│   └── style.css
+│
+├── views/
+│   ├── add.ejs
+│   ├── list.ejs
+│   ├── navbar.ejs
+│   └── update.ejs
+│
+├── .gitignore
+├── index.js
+├── package.json
+├── package-lock.json
+└── README.md
