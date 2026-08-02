@@ -1,4 +1,4 @@
-TaskFlow - Task Management Application
+<h1 align="center">TaskFlow - Task Management Application</h1>
 
 <p align="center"> <h3 align="center">A Simple & Efficient Task Management Application</h3> <p align="center"> Create, update, delete, and manage tasks with ease using Node.js, Express.js, MongoDB, and EJS. </p> </p>
 
@@ -13,7 +13,7 @@ TaskFlow - Task Management Application
 
 </p>
 
-📖 About The Project
+<h3 align="center">📖 About The Project</h3>
 
 TaskFlow is a full-stack task management application that helps users organize their daily work efficiently. It provides a clean and intuitive interface to perform all essential task management operations.
 
@@ -21,15 +21,17 @@ The application supports complete CRUD functionality, allowing users to create n
 
 This project demonstrates practical implementation of backend development concepts such as routing, server-side rendering, MongoDB integration, form handling, environment variables, and RESTful CRUD operations.
 
-📌 Features
-➕ Add new tasks
-✏️ Update existing tasks
-❌ Delete individual tasks
-🗑️ Delete multiple selected tasks simultaneously
-📋 View all tasks in one place
-💾 Persistent data storage using MongoDB
-⚡ Fast server-side rendering using EJS
-🎯 Simple and user-friendly interface
+
+<ol><h3>📌Features</h3>
+<li> Add new tasks</li>
+<li> Update existing tasks</li>
+<li> Delete individual tasks</li>
+<li> Delete multiple selected tasks simultaneously</li>
+<li> View all tasks in one place</li>
+<li> Persistent data storage using MongoDB</li>
+<li> Fast server-side rendering using EJS</li>
+<li> Simple and user-friendly interface</li>
+</ol>
 
 📂 Project Structure
 TaskFlow/
