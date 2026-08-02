@@ -65,3 +65,8 @@ Display on Dashboard
       └────────► Select Multiple Tasks → Delete
 
 
+👩‍💻 Author
+
+Nishu Kumari
+
+GitHub: https://github.com/Nishu-kumari1801
