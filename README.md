@@ -48,3 +48,20 @@ TaskFlow/
 ├── package.json
 ├── package-lock.json
 └── README.md
+
+🔄 Application Workflow
+Create Task
+      │
+      ▼
+Save in MongoDB
+      │
+      ▼
+Display on Dashboard
+      │
+      ├────────► Update Task
+      │
+      ├────────► Delete Task
+      │
+      └────────► Select Multiple Tasks → Delete
+
+
