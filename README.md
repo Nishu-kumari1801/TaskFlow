@@ -70,3 +70,5 @@ Display on Dashboard
 Nishu Kumari
 
 GitHub: https://github.com/Nishu-kumari1801
+
+<p align="center"> Made with ❤️ using Node.js, Express.js, MongoDB & EJS </p>
