@@ -55,20 +55,27 @@ TaskFlow/
 ```
 
 
-🔄 Application Workflow
-Create Task
-      │
-      ▼
-Save in MongoDB
-      │
-      ▼
-Display on Dashboard
-      │
-      ├────────► Update Task
-      │
-      ├────────► Delete Task
-      │
-      └────────► Select Multiple Tasks → Delete
+## 🔄 Application Workflow
+
+```text
+                 Start
+                   │
+                   ▼
+            Create New Task
+                   │
+                   ▼
+          Save Task in MongoDB
+                   │
+                   ▼
+          Display on Dashboard
+                   │
+        ┌──────────┼──────────┐
+        │          │          │
+        ▼          ▼          ▼
+   Update Task  Delete Task  Select Multiple Tasks
+
+```
+
 
 
 👩‍💻 Author
