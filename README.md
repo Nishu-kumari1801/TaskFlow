@@ -33,7 +33,9 @@ This project demonstrates practical implementation of backend development concep
 <li> Simple and user-friendly interface</li>
 </ol>
 
-📂 Project Structure
+## 📂 Project Structure
+
+```text
 TaskFlow/
 │
 ├── public/
@@ -50,6 +52,8 @@ TaskFlow/
 ├── package.json
 ├── package-lock.json
 └── README.md
+```
+
 
 🔄 Application Workflow
 Create Task
